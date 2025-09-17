@@ -38,4 +38,5 @@ export const links: LinkItem[] = [
   { id: '2', title: 'Bibliography', description: 'Zotero library and references.', url: '#', icon: 'Book' },
   { id: '3', title: 'Research Journal', description: 'Key articles and papers.', url: '#', icon: 'Library' },
   { id: '4', title: 'Revision Notes', description: 'Feedback from supervisors.', url: '#', icon: 'Link' },
+  { id: '5', title: 'Reviewed Journals', description: 'Journals that have been reviewed and used.', url: '#', icon: 'Library' },
 ];
