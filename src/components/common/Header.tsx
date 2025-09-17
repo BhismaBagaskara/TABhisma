@@ -1,5 +1,4 @@
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import DeadlineSuggester from "../dashboard/DeadlineSuggester";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
 const Header = () => {
@@ -14,7 +13,6 @@ const Header = () => {
                     </span>
                 </a>
                 <div className="flex items-center gap-4">
-                    <DeadlineSuggester />
                     <Avatar className="h-9 w-9">
                         {userAvatar && (
                            <AvatarImage src={userAvatar.imageUrl} alt={userAvatar.description} data-ai-hint={userAvatar.imageHint} />

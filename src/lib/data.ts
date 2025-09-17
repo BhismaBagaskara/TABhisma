@@ -8,12 +8,21 @@ export type GanttTask = {
 };
 
 export const ganttData: GanttTask[] = [
-  { id: '1', process: 'Chapter 1: Introduction', startDate: '2024-08-01', endDate: '2024-08-15', duration: 15, status: 'Completed' },
-  { id: '2', process: 'Chapter 2: Literature Review', startDate: '2024-08-16', endDate: '2024-09-15', duration: 31, status: 'In Progress' },
-  { id: '3', process: 'Chapter 3: Methodology', startDate: '2024-09-16', endDate: '2024-10-15', duration: 30, status: 'Not Started' },
-  { id: '4', process: 'Chapter 4: Results', startDate: '2024-10-16', endDate: '2024-11-15', duration: 31, status: 'Not Started' },
-  { id: '5', process: 'Chapter 5: Discussion', startDate: '2024-11-16', endDate: '2024-12-15', duration: 30, status: 'Not Started' },
-  { id: '6', process: 'Final Review & Submission', startDate: '2024-12-16', endDate: '2024-12-31', duration: 16, status: 'Not Started' },
+  { id: '1', process: 'Penentuan Topik', startDate: '2025-09-08', endDate: '2025-09-12', duration: 5, status: 'Completed' },
+  { id: '2', process: 'Literature Review', startDate: '2025-09-16', endDate: '2025-09-20', duration: 5, status: 'In Progress' },
+  { id: '3', process: 'Pendahuluan', startDate: '2025-09-22', endDate: '2025-09-27', duration: 6, status: 'Not Started' },
+  { id: '4', process: 'Revisi Pendahuluan', startDate: '2025-09-29', endDate: '2025-09-30', duration: 2, status: 'Not Started' },
+  { id: '5', process: 'Tinjauan Pustaka', startDate: '2025-10-01', endDate: '2025-10-09', duration: 9, status: 'Not Started' },
+  { id: '6', process: 'Revisi Tinjauan Pustaka', startDate: '2025-10-10', endDate: '2025-10-12', duration: 3, status: 'Not Started' },
+  { id: '7', process: 'Metodologi', startDate: '2025-10-13', endDate: '2025-10-23', duration: 11, status: 'Not Started' },
+  { id: '8', process: 'Revisi Metodologi', startDate: '2025-10-24', endDate: '2025-10-26', duration: 3, status: 'Not Started' },
+  { id: '9', process: 'Pengumpulan Data', startDate: '2025-10-27', endDate: '2025-11-15', duration: 20, status: 'Not Started' },
+  { id: '10', process: 'Pengolahan Data & Analisis Data', startDate: '2025-11-16', endDate: '2025-11-20', duration: 5, status: 'Not Started' },
+  { id: '11', process: 'Analisis & Pembahasan', startDate: '2025-11-21', endDate: '2025-11-27', duration: 7, status: 'Not Started' },
+  { id: '12', process: 'Revisi Analisis & Pembahasan', startDate: '2025-11-28', endDate: '2025-12-06', duration: 9, status: 'Not Started' },
+  { id: '13', process: 'Kesimpulan & Saran', startDate: '2025-12-07', endDate: '2025-12-13', duration: 7, status: 'Not Started' },
+  { id: '14', process: 'Revisi Kesimpulan & Saran', startDate: '2025-12-14', endDate: '2025-12-20', duration: 7, status: 'Not Started' },
+  { id: '15', process: 'Finalisasi', startDate: '2025-12-21', endDate: '2025-12-23', duration: 3, status: 'Not Started' },
 ];
 
 export type LinkItem = {
