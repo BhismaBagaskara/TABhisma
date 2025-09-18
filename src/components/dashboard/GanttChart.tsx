@@ -16,8 +16,8 @@ const GanttChart = ({ data }: { data: GanttTask[] }) => {
   return (
     <GlassCard className="h-full animate-fade-in-up">
       <CardHeader>
-        <CardTitle>Thesis Timeline</CardTitle>
-        <CardDescription>An overview of your project tasks and deadlines.</CardDescription>
+        <CardTitle>TA Bhisma Timeline</CardTitle>
+        <CardDescription>An overview of Bhisma's project tasks and deadlines.</CardDescription>
       </CardHeader>
       <CardContent>
         <ScrollArea className="h-[450px]">

@@ -49,7 +49,7 @@ const ProgressDashboard = ({ data }: { data: GanttTask[] }) => {
   return (
     <GlassCard className="animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
       <CardHeader>
-        <CardTitle>Thesis Progress</CardTitle>
+        <CardTitle>TA Bhisma's Progress</CardTitle>
         <CardDescription>{`You've completed ${completed} of ${total} tasks.`}</CardDescription>
       </CardHeader>
       <CardContent>

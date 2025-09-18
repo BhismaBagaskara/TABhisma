@@ -16,7 +16,7 @@ const LinkManager = ({ links }: { links: LinkItem[] }) => {
     <GlassCard className="animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
       <CardHeader>
         <CardTitle>Quick Links</CardTitle>
-        <CardDescription>Your essential thesis resources.</CardDescription>
+        <CardDescription>All TA resources links.</CardDescription>
       </CardHeader>
       <CardContent>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

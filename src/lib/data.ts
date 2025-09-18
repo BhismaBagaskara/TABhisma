@@ -34,9 +34,9 @@ export type LinkItem = {
 };
 
 export const links: LinkItem[] = [
-  { id: '1', title: 'Thesis Draft', description: 'Main document for the thesis.', url: '#', icon: 'FileText' },
-  { id: '2', title: 'Bibliography', description: 'Zotero library and references.', url: '#', icon: 'Book' },
+  { id: '1', title: 'Draft TA', description: 'Link Draft TA', url: 'https://docs.google.com/document/d/1AC-DK4RQ3l0RucI08jYj3mc3RR24oeVTE-ODB_6b3f4/edit?tab=t.uqgn1fgxdsd5#heading=h.xahfglsliasq', icon: 'FileText' },
+  { id: '2', title: 'Revisi DPTA 1', description: 'Feedback from DPTA 1', url: 'https://docs.google.com/document/d/14zNGvO1PYbCpa81lJ1-zS6PgaAKoNOhoRkSZLhKMJbc/edit?usp=sharing', icon: 'Link' },
   { id: '3', title: 'Research Journal', description: 'Key articles and papers.', url: '#', icon: 'Library' },
-  { id: '4', title: 'Revision Notes', description: 'Feedback from supervisors.', url: '#', icon: 'Link' },
-  { id: '5', title: 'Reviewed Journals', description: 'Journals that have been reviewed and used.', url: '#', icon: 'Library' },
+  { id: '4', title: 'Revisi DPTA 2', description: 'Feedback from DPTA 2', url: '#', icon: 'Link' },
+  { id: '5', title: 'Reviewed Journals', description: 'Journals that have been reviewed and used.', url: '#', icon: 'Book' },
 ];
