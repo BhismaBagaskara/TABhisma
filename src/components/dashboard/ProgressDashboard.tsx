@@ -13,37 +13,27 @@ import {
 } from "@/components/ui/chart";
 
 const ProgressDashboard = ({ data }: { data: GanttTask[] }) => {
-  const { completed, inProgress, notStarted, total } = useMemo(() => {
+  const { completed, notComplete, total } = useMemo(() => {
     const completed = data.filter((task) => task.status === "Completed").length;
-    const inProgress = data.filter((task) => task.status === "In Progress").length;
-    const notStarted = data.filter((task) => task.status === "Not Started").length;
-    return { completed, inProgress, notStarted, total: data.length };
+    const notComplete = data.filter((task) => task.status !== "Completed").length;
+    return { completed, notComplete, total: data.length };
   }, [data]);
 
   const chartData = [
-    { name: "Completed", value: completed, fill: "var(--color-completed)" },
-    { name: "In Progress", value: inProgress, fill: "var(--color-in-progress)" },
-    { name: "Not Started", value: notStarted, fill: "var(--color-not-started)" },
+    { name: "Completed", value: completed, fill: "#FBBF24" },
+    { name: "Not Complete", value: notComplete, fill: "#09090B" },
   ];
 
+  // Pastikan blok ini memiliki kurung kurawal penutup yang benar
   const chartConfig = {
-    value: {
-      label: "Tasks",
-    },
     "Completed": {
       label: "Completed",
-      color: "hsl(var(--chart-2))",
     },
-    "In Progress": {
-      label: "In Progress",
-      color: "hsl(var(--chart-1))",
-    },
-    "Not Started": {
-      label: "Not Started",
-      color: "hsl(var(--muted))",
+    "Not Complete": {
+      label: "Not Complete",
     },
   } satisfies ChartConfig;
-
+  
   const progressPercentage = total > 0 ? (completed / total) * 100 : 0;
 
   return (
@@ -64,16 +54,16 @@ const ProgressDashboard = ({ data }: { data: GanttTask[] }) => {
                 content={<ChartTooltipContent hideLabel nameKey="name" />}
               />
               <Pie
-                data={chartData}
+                data={chartData.sort((a, b) => (a.name === 'Completed' ? 1 : -1))}
                 dataKey="value"
                 nameKey="name"
                 innerRadius={60}
                 outerRadius={80}
                 strokeWidth={5}
               >
-                 {chartData.map((entry, index) => (
+                  {chartData.map((entry, index) => (
                     <Cell key={`cell-${index}`} fill={entry.fill} />
-                 ))}
+                  ))}
               </Pie>
             </PieChart>
           </ChartContainer>

@@ -11,16 +11,20 @@ const statusStyles = {
   'Not Started': 'bg-gray-500/20 text-gray-700 border-gray-500/30 hover:bg-gray-500/30 dark:text-gray-400 dark:border-gray-500/40 dark:bg-gray-500/10'
 };
 
-
 const GanttChart = ({ data }: { data: GanttTask[] }) => {
   return (
-    <GlassCard className="h-full animate-fade-in-up">
+    // 1. UBAH DI SINI: Tambahkan flex flex-col
+    <GlassCard className="h-full animate-fade-in-up flex flex-col">
       <CardHeader>
         <CardTitle>TA Bhisma Timeline</CardTitle>
         <CardDescription>An overview of Bhisma's project tasks and deadlines.</CardDescription>
       </CardHeader>
-      <CardContent>
-        <ScrollArea className="h-[450px]">
+      
+      {/* 2. UBAH DI SINI: Tambahkan className="flex-1" untuk membuat konten tumbuh */}
+      <CardContent className="flex-1">
+        
+        {/* 3. UBAH DI SINI: Ganti h-[450px] menjadi h-full */}
+        <ScrollArea className="h-full">
           <Table>
             <TableHeader>
               <TableRow>
