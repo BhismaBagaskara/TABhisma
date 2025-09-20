@@ -9,7 +9,7 @@ export type GanttTask = {
 
 export const ganttData: GanttTask[] = [
   { id: '1', process: 'Penentuan Topik', startDate: '2025-09-08', endDate: '2025-09-12', duration: 5, status: 'Completed' },
-  { id: '2', process: 'Literature Review', startDate: '2025-09-16', endDate: '2025-09-20', duration: 5, status: 'In Progress' },
+  { id: '2', process: 'Literature Review', startDate: '2025-09-16', endDate: '2025-09-20', duration: 5, status: 'Completed' },
   { id: '3', process: 'Pendahuluan', startDate: '2025-09-22', endDate: '2025-09-27', duration: 6, status: 'Not Started' },
   { id: '4', process: 'Revisi Pendahuluan', startDate: '2025-09-29', endDate: '2025-09-30', duration: 2, status: 'Not Started' },
   { id: '5', process: 'Tinjauan Pustaka', startDate: '2025-10-01', endDate: '2025-10-09', duration: 9, status: 'Not Started' },
@@ -36,7 +36,7 @@ export type LinkItem = {
 export const links: LinkItem[] = [
   { id: '1', title: 'Draft TA', description: 'Link Draft TA', url: 'https://docs.google.com/document/d/1AC-DK4RQ3l0RucI08jYj3mc3RR24oeVTE-ODB_6b3f4/edit?tab=t.uqgn1fgxdsd5#heading=h.xahfglsliasq', icon: 'FileText' },
   { id: '2', title: 'Revisi DPTA 1', description: 'Feedback from DPTA 1', url: 'https://docs.google.com/document/d/14zNGvO1PYbCpa81lJ1-zS6PgaAKoNOhoRkSZLhKMJbc/edit?usp=sharing', icon: 'Link' },
-  { id: '3', title: 'Research Journal', description: 'Key articles and papers.', url: '#', icon: 'Library' },
-  { id: '4', title: 'Revisi DPTA 2', description: 'Feedback from DPTA 2', url: '#', icon: 'Link' },
-  { id: '5', title: 'Reviewed Journals', description: 'Journals that have been reviewed and used.', url: '#', icon: 'Book' },
+  { id: '3', title: 'Research Journal', description: 'Key articles and papers.', url: 'https://drive.google.com/drive/folders/19wFtHRPi13T7AX6x0MBOpg_mN6YiESZO?usp=sharing', icon: 'Library' },
+  { id: '4', title: 'Revisi DPTA 2', description: 'not available yet', url: '#', icon: 'Link' },
+  { id: '5', title: 'Reviewed Journals', description: 'Journals that have been reviewed.', url: 'https://drive.google.com/drive/folders/12eDSICd0Aa-8SDLMS5HE4665PmkRWy5g?usp=sharing', icon: 'Book' },
 ];

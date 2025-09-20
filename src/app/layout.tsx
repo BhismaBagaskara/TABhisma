@@ -4,7 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
   title: 'TABhisma',
-  description: 'Your thesis management companion',
+  description: 'Every Progress of Bhisma TA',
 };
 
 export default function RootLayout({
