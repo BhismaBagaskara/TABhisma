@@ -3,7 +3,7 @@
     {
       "id": "user-avatar",
       "description": "User avatar placeholder",
-      "imageUrl": "https://picsum.photos/seed/avatar1/40/40",
+      "imageUrl": "/images/Luffy.png",
       "imageHint": "person face"
     }
   ]
